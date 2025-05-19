@@ -30,6 +30,8 @@ console.log(user_index);
 var storedUserNameAndInterests = JSON.parse(localStorage.getItem("userNameAndInterests"));
 var userNameAndInterests = Array.isArray(storedUserNameAndInterests) ? storedUserNameAndInterests : [];
 
+
+
 if (userNameAndInterests.length == 0) userNameAndInterests.push(userData);
 else{
     for(var i=0; i<userNameAndInterests.length; i++){
