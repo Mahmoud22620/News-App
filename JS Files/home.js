@@ -80,23 +80,23 @@ for( var i=0 ; i<countryLinks.length ;i++)
 
     if(From != "" && To != "")
     {
-       myHttp.open('GET',`https://newsapi.org/v2/everything?q=${Title}&from=${From}&to=${To}&apiKey=9076844f769c4345b673fe113beab7d5`);
-       console.log(`https://newsapi.org/v2/everything?q=${Title}&from=${From}&to=${To}&apiKey=9076844f769c4345b673fe113beab7d5`);
+       myHttp.open('GET',`http://newsapi.org/v2/everything?q=${Title}&from=${From}&to=${To}&apiKey=9076844f769c4345b673fe113beab7d5`);
+       console.log(`http://newsapi.org/v2/everything?q=${Title}&from=${From}&to=${To}&apiKey=9076844f769c4345b673fe113beab7d5`);
     }
     else if(From != "" && To == "")
     {
-        myHttp.open('GET',`https://newsapi.org/v2/everything?q=${Title}&from=${From}&apiKey=9076844f769c4345b673fe113beab7d5`);
-        console.log(`https://newsapi.org/v2/everything?q=${Title}&from=${From}&apiKey=9076844f769c4345b673fe113beab7d5`);
+        myHttp.open('GET',`http://newsapi.org/v2/everything?q=${Title}&from=${From}&apiKey=9076844f769c4345b673fe113beab7d5`);
+        console.log(`http://newsapi.org/v2/everything?q=${Title}&from=${From}&apiKey=9076844f769c4345b673fe113beab7d5`);
     }
     else if(From == "" && To != "")
     {
-        myHttp.open('GET',`https://newsapi.org/v2/everything?q=${Title}&to=${To}&apiKey=9076844f769c4345b673fe113beab7d5`);
-        console.log(`https://newsapi.org/v2/everything?q=${Title}&to=${To}&apiKey=9076844f769c4345b673fe113beab7d5`);
+        myHttp.open('GET',`http://newsapi.org/v2/everything?q=${Title}&to=${To}&apiKey=9076844f769c4345b673fe113beab7d5`);
+        console.log(`http://newsapi.org/v2/everything?q=${Title}&to=${To}&apiKey=9076844f769c4345b673fe113beab7d5`);
     }
     else
     {
-        myHttp.open('GET',`https://newsapi.org/v2/everything?q=${Title}&apiKey=9076844f769c4345b673fe113beab7d5`);
-        console.log(`https://newsapi.org/v2/everything?q=${Title}&apiKey=9076844f769c4345b673fe113beab7d5`);
+        myHttp.open('GET',`http://newsapi.org/v2/everything?q=${Title}&apiKey=9076844f769c4345b673fe113beab7d5`);
+        console.log(`http://newsapi.org/v2/everything?q=${Title}&apiKey=9076844f769c4345b673fe113beab7d5`);
     }
    
     myHttp.send();
@@ -121,8 +121,8 @@ function getInterests (ArrayLists)
     {
         const interest = ArrayLists[i]; 
         const myHttp = new XMLHttpRequest();
-        console.log(`https://newsapi.org/v2/everything?q=${interest}&apiKey=9076844f769c4345b673fe113beab7d5`);
-        myHttp.open('GET',`https://newsapi.org/v2/everything?q=${interest}&apiKey=9076844f769c4345b673fe113beab7d5`);  
+        console.log(`http://newsapi.org/v2/everything?q=${interest}&apiKey=9076844f769c4345b673fe113beab7d5`);
+        myHttp.open('GET',`http://newsapi.org/v2/everything?q=${interest}&apiKey=9076844f769c4345b673fe113beab7d5`);  
         myHttp.send();
         myHttp.addEventListener('readystatechange',function()
         {
